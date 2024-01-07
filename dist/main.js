@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2018 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,14 +16,21 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+'use strict';
+
+// MODULES //
+
+var propertyDescriptor = require( '@stdlib/utils-property-descriptor' );
+
+
+// MAIN //
 
 /**
 * Tests if an object's own property is non-configurable.
 *
-* @param value - value to test
-* @param property - property to test
-* @returns boolean indicating if an object property is non-configurable
+* @param {*} value - value to test
+* @param {*} property - property to test
+* @returns {boolean} boolean indicating if an object property is non-configurable
 *
 * @example
 * var defineProperty = require( '@stdlib/utils-define-property' );
@@ -45,9 +52,12 @@
 * bool = isNonConfigurableProperty( obj, 'beep' );
 * // returns true
 */
-declare function isNonConfigurableProperty( value: any, property: any ): boolean;
+function isNonConfigurableProperty( value, property ) {
+	var desc = propertyDescriptor( value, property );
+	return ( desc !== null && desc.configurable === false );
+}
 
 
 // EXPORTS //
 
-export = isNonConfigurableProperty;
+module.exports = isNonConfigurableProperty;
