@@ -35,14 +35,30 @@ limitations under the License.
 
 > Test if an object's own property is non-configurable.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-nonconfigurable-property
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@esm/index.mjs';
+var isNonConfigurableProperty = require( '@stdlib/assert-is-nonconfigurable-property' );
 ```
 
 #### isNonConfigurableProperty( value, property )
@@ -50,7 +66,7 @@ import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/ass
 Returns a `boolean` indicating if a `value` has a non-configurable `property` (i.e., a property which cannot be deleted and whose descriptor cannot be changed).
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
+var defineProperty = require( '@stdlib/utils-define-property' );
 
 var obj = {
     'foo': 'bar'
@@ -97,13 +113,8 @@ bool = isNonConfigurableProperty( obj, 'foo' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@esm/index.mjs';
+```javascript
+var isNonConfigurableProperty = require( '@stdlib/assert-is-nonconfigurable-property' );
 
 var bool = isNonConfigurableProperty( [ 'a' ], 'length' );
 // returns true
@@ -131,10 +142,6 @@ bool = isNonConfigurableProperty( { 'null': false }, null );
 
 bool = isNonConfigurableProperty( { '[object Object]': false }, {} );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -169,7 +176,7 @@ bool = isNonConfigurableProperty( { '[object Object]': false }, {} );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -178,11 +185,6 @@ For more information on the project, filing bug reports and feature requests, an
 [![Chat][chat-image]][chat-url]
 
 ---
-
-## License
-
-See [LICENSE][stdlib-license].
-
 
 ## Copyright
 
@@ -227,21 +229,19 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/assert-is-nonconfigurable-property/tree/esm
 [branches-url]: https://github.com/stdlib-js/assert-is-nonconfigurable-property/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-nonconfigurable-property/main/LICENSE
-
 <!-- <related-links> -->
 
-[@stdlib/assert/is-configurable-property]: https://github.com/stdlib-js/assert-is-configurable-property/tree/esm
+[@stdlib/assert/is-configurable-property]: https://github.com/stdlib-js/assert-is-configurable-property
 
-[@stdlib/assert/is-enumerable-property]: https://github.com/stdlib-js/assert-is-enumerable-property/tree/esm
+[@stdlib/assert/is-enumerable-property]: https://github.com/stdlib-js/assert-is-enumerable-property
 
-[@stdlib/assert/is-nonconfigurable-property-in]: https://github.com/stdlib-js/assert-is-nonconfigurable-property-in/tree/esm
+[@stdlib/assert/is-nonconfigurable-property-in]: https://github.com/stdlib-js/assert-is-nonconfigurable-property-in
 
-[@stdlib/assert/is-nonenumerable-property]: https://github.com/stdlib-js/assert-is-nonenumerable-property/tree/esm
+[@stdlib/assert/is-nonenumerable-property]: https://github.com/stdlib-js/assert-is-nonenumerable-property
 
-[@stdlib/assert/is-readable-property]: https://github.com/stdlib-js/assert-is-readable-property/tree/esm
+[@stdlib/assert/is-readable-property]: https://github.com/stdlib-js/assert-is-readable-property
 
-[@stdlib/assert/is-writable-property]: https://github.com/stdlib-js/assert-is-writable-property/tree/esm
+[@stdlib/assert/is-writable-property]: https://github.com/stdlib-js/assert-is-writable-property
 
 <!-- </related-links> -->
 
