@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@deno/mod.js';
+import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@v0.2.0-deno/mod.js';
 ```
 
 #### isNonConfigurableProperty( value, property )
@@ -98,7 +98,7 @@ bool = isNonConfigurableProperty( obj, 'foo' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@deno/mod.js';
+import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@v0.2.0-deno/mod.js';
 
 var bool = isNonConfigurableProperty( [ 'a' ], 'length' );
 // returns true
