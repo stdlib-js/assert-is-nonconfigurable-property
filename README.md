@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@esm/index.mjs';
+import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@v0.2.0-esm/index.mjs';
 ```
 
 #### isNonConfigurableProperty( value, property )
@@ -103,7 +103,7 @@ bool = isNonConfigurableProperty( obj, 'foo' );
 <body>
 <script type="module">
 
-import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@esm/index.mjs';
+import isNonConfigurableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@v0.2.0-esm/index.mjs';
 
 var bool = isNonConfigurableProperty( [ 'a' ], 'length' );
 // returns true
