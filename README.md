@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+isNonConfigurableProperty = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-nonconfigurable-property/tags). For example,
+
+```javascript
 isNonConfigurableProperty = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@v0.2.1-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var isNonConfigurableProperty = require( 'path/to/vendor/umd/assert-is-nonconfig
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -125,7 +130,7 @@ bool = isNonConfigurableProperty( obj, 'foo' );
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
