@@ -1,39 +1,5 @@
+"use strict";var o=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var s=o(function(p,i){
+var u=require('@stdlib/utils-property-descriptor/dist');function n(e,r){var t=u(e,r);return t!==null&&t.configurable===!1}i.exports=n
+});var a=s();module.exports=a;
 /** @license Apache-2.0 */
-
-'use strict';
-
-/**
-* Test whether an object's own property is non-configurable.
-*
-* @module @stdlib/assert-is-nonconfigurable-property
-*
-* @example
-* var defineProperty = require( '@stdlib/utils-define-property' );
-* var isNonConfigurableProperty = require( '@stdlib/assert-is-nonconfigurable-property' );
-*
-* var obj = {
-*     'boop': true
-* };
-*
-* defineProperty( obj, 'beep', {
-*     'configurable': false,
-*     'enumerable': true,
-*     'writable': true,
-*     'value': 'beep'
-* });
-*
-* var bool = isNonConfigurableProperty( obj, 'boop' );
-* // returns false
-*
-* bool = isNonConfigurableProperty( obj, 'beep' );
-* // returns true
-*/
-
-// MODULES //
-
-var main = require( './main.js' );
-
-
-// EXPORTS //
-
-module.exports = main;
+//# sourceMappingURL=index.js.map
